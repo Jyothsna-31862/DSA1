@@ -1,0 +1,26 @@
+/* package whatever; // don't place package name! */
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+/* Name of the class has to be "Main" only if the class is public. */
+class Ideone
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		Scanner s = new Scanner(System.in);
+		
+		int number = s.nextInt();
+		int reverse = 0;
+		
+		while(number >0) {
+			int last_digit = number%10; //extarct the last digit
+			reverse = reverse*10 + last_digit; //store the last digit in the varibale
+			number = number / 10; // remove the last digit from the number
+			
+		}
+		System.out.print(reverse);
+	}
+}
